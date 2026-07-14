@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IQ Consultancy — индекс версий вёрстки</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f4f2ee;--card:#fff;--ink:#141412;--muted:#75736c;--red:#ff4527;--teal:#00b0a6;--hair:#e3e1db}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Commissioner',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 32px 96px}
+  .kicker{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+  h1{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:14px}
+  p.lead{color:var(--muted);max-width:640px;margin-bottom:12px}
+  .note{background:#fff;border:1px solid var(--hair);border-left:3px solid var(--red);border-radius:10px;padding:14px 18px;max-width:720px;margin:22px 0 44px;font-size:13.5px;color:var(--muted)}
+  .note b{color:var(--ink)}
+  .style{display:grid;grid-template-columns:220px 1fr;gap:28px;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;margin-bottom:22px;align-items:center}
+  @media(max-width:720px){.style{grid-template-columns:1fr}}
+  .style img{width:100%;border:1px solid var(--hair);border-radius:8px;display:block}
+  .style h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+  .style h2 span{color:var(--muted);font-weight:400;font-size:15px;margin-left:8px}
+  .style p{color:var(--muted);font-size:14px;max-width:560px;margin-bottom:14px}
+  .links{display:flex;gap:10px;flex-wrap:wrap}
+  .links a{font-size:13.5px;font-weight:600;padding:9px 18px;border-radius:9px;border:1px solid var(--ink);color:var(--ink);text-decoration:none}
+  .links a:hover{background:var(--ink);color:#fff}
+  .print{margin-top:40px;font-size:13.5px;color:var(--muted);max-width:720px}
+  .print b{color:var(--ink)}
+  code{background:#ecebe6;border-radius:5px;padding:1px 7px;font-size:.92em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">IQ Consultancy · Sales Enablement</div>
+  <h1>Пакеты сопровождения — все версии вёрстки</h1>
+  <p class="lead">Пять стилевых направлений, в каждом — три пакета (Full · Privilege · Premium). Каждый файл — самодостаточный HTML на 7 страниц A4, готовый к экспорту в PDF.</p>
+  <div class="note"><b>Открытый вопрос по ценам:</b> в исходном docx цены Privilege и Premium на «экранах пакетов» противоречат таблицам сравнения. Сверстано по таблицам: Full 350 000 ₽ → Privilege 550 000 ₽ → Premium 880 000 ₽. Если верно наоборот — скажите, поменяем.</div>
+
+  <div class="style">
+    <img src="_превью/v1.jpg" alt="v1 классика">
+    <div>
+      <h2>v1 — Классика<span>светлый фирстиль</span></h2>
+      <p>Ближе всего к гайдлайну: белый фон, красные акценты, дот-паттерн, четверть-круги. Иконки-метафоры в тайлах, bold-выделения ключевых слов.</p>
+      <div class="links">
+        <a href="v1 классика/IQ-Пакет-Full.html">Full</a>
+        <a href="v1 классика/IQ-Пакет-Privilege.html">Privilege</a>
+        <a href="v1 классика/IQ-Пакет-Premium.html">Premium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="style">
+    <img src="_превью/v2.jpg" alt="v2 тёмный премиум">
+    <div>
+      <h2>v2 — Тёмный премиум<span>репорт-эстетика, статус</span></h2>
+      <p>Почти чёрный фон, белый логотип, цена белым на красной плашке, статы в тонких рамках-картах с гигантскими цифрами — язык дорогих годовых отчётов.</p>
+      <div class="links">
+        <a href="v2 тёмный премиум/IQ-Пакет-Full.html">Full</a>
+        <a href="v2 тёмный премиум/IQ-Пакет-Privilege.html">Privilege</a>
+        <a href="v2 тёмный премиум/IQ-Пакет-Premium.html">Premium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="style">
+    <img src="_превью/v3.jpg" alt="v3 editorial">
+    <div>
+      <h2>v3 — Editorial<span>цветные фоны</span></h2>
+      <p>Тёплый крем, крупная плакатная типографика, красный сектор обложки, бирюзовая страница цены, тёмный финал. Самый журнальный ритм.</p>
+      <div class="links">
+        <a href="v3 editorial/IQ-Пакет-Full.html">Full</a>
+        <a href="v3 editorial/IQ-Пакет-Privilege.html">Privilege</a>
+        <a href="v3 editorial/IQ-Пакет-Premium.html">Premium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="style">
+    <img src="_превью/v4.jpg" alt="v4 каталог">
+    <div>
+      <h2>v4 — Каталог<span>номерная система</span></h2>
+      <p>Светло-серый, швейцарская сетка, контурные номера секций 01–06, спецификация-мета на обложке, белые карточки. Строгий «технический паспорт» услуги.</p>
+      <div class="links">
+        <a href="v4 каталог/IQ-Пакет-Full.html">Full</a>
+        <a href="v4 каталог/IQ-Пакет-Privilege.html">Privilege</a>
+        <a href="v4 каталог/IQ-Пакет-Premium.html">Premium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="style">
+    <img src="_превью/v5.jpg" alt="v5 греж люкс">
+    <div>
+      <h2>v5 — Греж люкс<span>quiet luxury</span></h2>
+      <p>Тёплый греж, паспарту-рамка на каждой странице, лёгкие заголовки Commissioner Light, графитовые точки, максимум воздуха. Красный — только в логотипе и одном слове.</p>
+      <div class="links">
+        <a href="v5 греж люкс/IQ-Пакет-Full.html">Full</a>
+        <a href="v5 греж люкс/IQ-Пакет-Privilege.html">Privilege</a>
+        <a href="v5 греж люкс/IQ-Пакет-Premium.html">Premium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="print">
+    <b>Экспорт в PDF:</b> открыть файл пакета → <code>⌘P</code> → «Сохранить как PDF», поля <code>None</code>, масштаб 100%, фоновая графика включена. Страницы лягут ровно по A4.<br><br>
+    Три файла в корне папки (без подпапки) — первая итерация от 14.07, оставлены как черновик. Референсы стилей: гайдлайн IQ Consultancy, cosmos.so («presentation design»), SVG-метафоры из библиотек Vibe Coding.
+  </div>
+</div>
+</body>
+</html>
